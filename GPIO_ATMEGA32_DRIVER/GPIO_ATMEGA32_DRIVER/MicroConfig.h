@@ -64,6 +64,128 @@
 
 
 
+	/*PortA*/
+	#define	PA0		0
+	#define PA1		1
+	#define	PA2		2
+	#define PA3		3
+	#define	PA4		4
+	#define PA5		5
+	#define	PA6		6
+	#define PA7		7
+	
+	/*DDRA*/
+	#define	DDRA0		0
+	#define DDRA1		1
+	#define	DDRA2		2
+	#define DDRA3		3
+	#define	DDRA4		4
+	#define DDRA5		5
+	#define	DDRA6		6
+	#define DDRA7		7
+	
+	/*PINA*/
+	#define	PINA0		0
+	#define PINA1		1
+	#define	PINA2		2
+	#define PINA3		3
+	#define	PINA4		4
+	#define PINA5		5
+	#define	PINA6		6
+	#define PINA7		7
+	
+	/*PortB*/
+	#define	PB0		0
+	#define PB1		1
+	#define	PB2		2
+	#define PB3		3
+	#define	PB4		4
+	#define PB5		5
+	#define	PB6		6
+	#define PB7		7
+	
+	/*DDRB*/
+	#define	DDRB0		0
+	#define DDRB1		1
+	#define	DDRB2		2
+	#define DDRB3		3
+	#define	DDRB4		4
+	#define DDRB5		5
+	#define	DDRB6		6
+	#define DDRB7		7
+	
+	/*PINB*/
+	#define	PINB0		0
+	#define PINB1		1
+	#define	PINB2		2
+	#define PINB3		3
+	#define	PINB4		4
+	#define PINB5		5
+	#define	PINB6		6
+	#define PINB7		7
+	
+	/*PortC*/
+	#define	PC0		0
+	#define PC1		1
+	#define	PC2		2
+	#define PC3		3
+	#define	PC4		4
+	#define PC5		5
+	#define	PC6		6
+	#define PC7		7
+	
+	/*DDRC*/
+	#define	DDRC0		0
+	#define DDRC1		1
+	#define	DDRC2		2
+	#define DDRC3		3
+	#define	DDRC4		4
+	#define DDRC5		5
+	#define	DDRC6		6
+	#define DDRC7		7
+	
+	/*PINC*/
+	#define	PINC0		0
+	#define PINC1		1
+	#define	PINC2		2
+	#define PINC3		3
+	#define	PINC4		4
+	#define PINC5		5
+	#define	PINC6		6
+	#define PINC7		7
+	
+	/*PortD*/
+	#define	PD0		0
+	#define PD1		1
+	#define	PD2		2
+	#define PD3		3
+	#define	PD4		4
+	#define PD5		5
+	#define	PD6		6
+	#define PD7		7
+	
+	/*DDRA*/
+	#define	DDRD0		0
+	#define DDRD1		1
+	#define	DDRD2		2
+	#define DDRD3		3
+	#define	DDRD4		4
+	#define DDRD5		5
+	#define	DDRD6		6
+	#define DDRD7		7
+	
+	/*PINA*/
+	#define	PIND0		0
+	#define PIND1		1
+	#define	PIND2		2
+	#define PIND3		3
+	#define	PIND4		4
+	#define PIND5		5
+	#define	PIND6		6
+	#define PIND7		7
+
+
+
 	typedef enum {
 			INPUT=0,
 			OUTPUT=1,
