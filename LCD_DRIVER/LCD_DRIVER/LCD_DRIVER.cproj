@@ -108,7 +108,25 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="LCD_Driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCD_Driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MACROS.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MicroConfig.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MicroConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="STD_TYPES.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

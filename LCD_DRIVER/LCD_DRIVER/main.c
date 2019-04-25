@@ -5,14 +5,21 @@
  * Author : Unknown
  */ 
 
-#include <avr/io.h>
-
+#include "MACROS.h"
+#include "MicroConfig.h"
+#include "STD_TYPES.h"
+#include "LCD_Driver.h"
+#include <util/delay.h>
 
 int main(void)
 {
+	_delay_ms(20);
+	LCD_init();
     /* Replace with your application code */
     while (1) 
     {
+		LCD_displayInt(156);
+		_delay_ms(1000);
     }
 }
 

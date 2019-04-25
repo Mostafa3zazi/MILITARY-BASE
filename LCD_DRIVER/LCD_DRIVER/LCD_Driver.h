@@ -9,21 +9,21 @@
 #ifndef LCD_DRIVER_H_
 #define LCD_DRIVER_H_
 
-	#include "MICROCONIFG.h"
-	#include "STDTYPES.h"
+	#include "MicroConfig.h"
+	#include "STD_TYPES.h"
 	#include "MACROS.h"
 	
 #define	EIGHT_DATABIT_MODE	0		/* 1 for eight bit mode , 0 for four bit mode*/
 #define UPPER_DATA_PORT		1		/* 1 for upper 4 pins , 0 for lower 4 pins */
 
-#define RS		PC5
-#define EN		PC6
-#define RW		PC7
+#define RS		PD0
+#define RW		PD1
+#define EN		PD2
 
-#define LCD_CONTROL_REG_DIRECTION	PORTC_DIRREG
-#define LCD_CONTROL_REG_WRITE		PORTC_OUTPUTREG
-#define	LCD_DATA_REG_DIRECTION		PORTA_DIRREG
-#define LCD_DATA_REG_WRITE			PORTA_OUTPUTREG
+#define LCD_CONTROL_REG_DIRECTION	PORTD_DIRREG
+#define LCD_CONTROL_REG_WRITE		PORTD_OUTPUTREG
+#define	LCD_DATA_REG_DIRECTION		PORTD_DIRREG
+#define LCD_DATA_REG_WRITE			PORTD_OUTPUTREG
 
 /*List of Commands Code*/
 #define CLEAR_DISPLAY				0x01
@@ -49,7 +49,7 @@ void LCD_shiftLeft(void);
 void LCD_shiftRight(void);
 void LCD_goToRowColumn(uint8 row,uint8 column);
 void LCD_displayChar(uint8 character);
-void LCD_displayString(uint8 *str);
-void LCD_displayInt(sint16 number);
+void LCD_displayString(char *str);
+void LCD_displayInt(sint32 number);
 
 #endif /* LCD_DRIVER_H_ */
