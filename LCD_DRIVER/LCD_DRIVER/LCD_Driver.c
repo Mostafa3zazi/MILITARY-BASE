@@ -126,3 +126,24 @@ void LCD_displayInt(sint32 number){
 void LCD_clearScreen(void){
 	LCD_sendCommand(CLEAR_DISPLAY);
 }
+
+void LCD_shiftEntireLeft(void){
+	LCD_sendCommand(SHIFT_ENTIRE_DISPLAY_LEFT);
+}
+
+void LCD_shiftEntireRight(void){
+	LCD_sendCommand(SHIFT_ENTIRE_DISPLAY_RIGHT);
+}
+
+/*this function for 16*2 only*/
+void LCD_goToRowColumn(uint8 row,uint8 column){
+	uint8 address = 0;
+	switch (row){
+		case 0:
+			address=column|0x00;
+			break;
+		case 1:
+			address=column|0x40;
+	}
+	LCD_sendCommand(DDRAM_CONSTANT|address);
+}

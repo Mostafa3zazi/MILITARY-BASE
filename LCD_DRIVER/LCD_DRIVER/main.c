@@ -18,6 +18,7 @@ int main(void)
     /* Replace with your application code */
     while (1) 
     {
+		LCD_goToRowColumn(1,0);
 		LCD_displayInt(156);
 		_delay_ms(1000);
     }

@@ -36,17 +36,18 @@
 #define DISPLAY_ON_CURSOR_OFF		0x0C
 #define DISPLAY_ON_CURSOR_ON		0x0E
 #define DISPLAY_ON_CURSOR_BLINK		0x0F
-#define SHIFT_ENTIER_DISPLAY_LEFT	0x18
-#define SHIFT_ENTIER_DISPLAY_RIGHT	0x1C
+#define SHIFT_ENTIRE_DISPLAY_LEFT	0x18
+#define SHIFT_ENTIRE_DISPLAY_RIGHT	0x1C
 #define BIT_MODE_4					0x28
 #define BIT_MODE_8					0x38
+#define DDRAM_CONSTANT				0x80
 
 /*functions*/
 void LCD_init(void);
 void LCD_sendCommand(uint8 command);
 void LCD_clearScreen(void);
-void LCD_shiftLeft(void);
-void LCD_shiftRight(void);
+void LCD_shiftEntireLeft(void);
+void LCD_shiftEntireRight(void);
 void LCD_goToRowColumn(uint8 row,uint8 column);
 void LCD_displayChar(uint8 character);
 void LCD_displayString(char *str);
